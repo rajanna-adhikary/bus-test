@@ -82,6 +82,7 @@ def view_all():
     btn("Back", main_menu, bg="black")
 
 # ======== START ========
-root = tk.Tk(); root.title("Bus Reservation System")
-root.state("zoomed"); root.configure(bg="#f0f8ff"); root.image_store = []
-main_menu(); root.mainloop()
+if __name__ == "__main__":
+    root = tk.Tk(); root.title("Bus Reservation System")
+    root.state("zoomed"); root.configure(bg="#f0f8ff"); root.image_store = []
+    main_menu(); root.mainloop()
